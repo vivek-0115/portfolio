@@ -50,7 +50,7 @@ const projects = [
 
       <!-- Projects list -->
       <div class="px-8 py-4">
-        <div id="card-holder" class="flex flex-row w-full gap-10">
+        <div id="card-holder" class="flex flex-col md:flex-row w-full gap-8">
 
           <div v-for="project in projects" :key="project.title" class="">
             <h2 class="text-2xl font-medium">
@@ -86,7 +86,7 @@ const projects = [
             </ul>
 
             <!-- Buttons -->
-            <section class="flex flex-row gap-12 mt-8 justify-center">
+            <section class="flex flex-row gap-2 mt-8">
               <!-- Repo / View Code -->
               <a v-if="project.repoUrl" :href="project.repoUrl" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 border
                        border-blue-500 text-blue-600 dark:text-blue-400

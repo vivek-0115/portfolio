@@ -20,8 +20,8 @@ const handleSubmit = (e) => {
       </div>
 
       <div class="">
-        <main class="grid grid-cols-2 ">
-          <div class="px-8 py-4 border-or">
+        <main class="grid grid-cols-1 md:grid-cols-2">
+          <div class="px-8 py-4 border-ob md:border-or">
             <div class="space-y-6">
               <p class="text-gray-700 dark:text-gray-400 text-lg leading-relaxed ">
                 We are committed to processing the information in order to contact you and talk

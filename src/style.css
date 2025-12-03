@@ -202,16 +202,15 @@ body{
     height: 1.5rem;
     transform: translateX(-50%) translateY(-50%) rotate(45deg);
     background-color: var(--background-color);
+    transition: all 0.3s ease-in-out;
     @apply border-r border-l border-t border-b border-blue-500 dark:border-blue-500
 }
 
 #card-holder div:nth-child(odd){
-  width: 50%;
   @apply border-t border-r pr-6 py-4 border-gray-300 dark:border-gray-500
 }
 
 #card-holder div:nth-child(even){
-  width: 50%;
   @apply border-t border-l pl-6 py-4 border-gray-300 dark:border-gray-500
 }
 #card-holder li{
@@ -229,7 +228,7 @@ body{
   @apply pl-6 py-4 border-gray-300 dark:border-gray-500;
 }
 #exp-card > div:nth-child(odd) {
-  @apply border-r;
+  @apply md:border-r;
 }
 #exp-card > div:not(:nth-last-child(-n+1)) {
   @apply border-b;

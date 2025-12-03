@@ -127,7 +127,7 @@ onBeforeUnmount(() => {
             
             <div class="diamond relative px-6 py-3">
               <p class="text-lg font-medium">{{ section.title }}</p>
-              <p class="text-gray-400">{{ section.desc }}</p>
+              <p class="text-gray-500 dark:text-gray-400">{{ section.desc }}</p>
             </div>
 
             <div v-if="section.items.length" class="px-6 py-3">

@@ -153,13 +153,13 @@ onBeforeUnmount(() => {
                                 </div>
                             </div>
 
-                            <div class="skill gap-8 flex px-3 py-2">
+                            <div class="skill grid grid-cols-2 gap-y-12 gap-x-10 md:flex md:gap-8 px-3 py-2">
                                 <div v-for="skill in category.skills" :key="skill.name" id="skill-card"
-                                    class="relative flex flex-col gap-3 px-8 py-2 reveal-section">
+                                    class="relative flex flex-col gap-2 px-4 py-2 reveal-section ">
                                     <span></span><span></span><span></span><span></span>
                                     <div class="flex items-center gap-2">
-                                        <Icon :icon="skill.icon" class="w-6 h-6" />
-                                        <p class=" text-lg">{{ skill.name }}</p>
+                                        <Icon :icon="skill.icon" class="w-5 md:w-6 h-5 md:h-6" />
+                                        <p class=" text-sm md:text-lg">{{ skill.name }}</p>
                                     </div>
                                     <div class="">
                                         <div class="w-full bg-gray-300 h-1 dark:bg-gray-700">

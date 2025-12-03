@@ -1,21 +1,42 @@
 <template>
-  <section class="">
-    <div class="container mx-auto border-lr flex flex-col">
+  <section class="mt-8">
+    <div class="container mx-auto border-lr">
 
-      <div class="grid grid-cols-3">
+      <!-- wrapper -->
+      <div class="grid grid-cols-1 md:grid-cols-3">
 
-        <div class="py-4 px-8 border-or">
-          <p>Vivek Kumar — Backend & AI Engineer</p>
-          <p class="text-blue-600 cursor-pointer">vivekraj0620@gmail.com</p>
+        <!-- Column 1 -->
+        <div class="py-6 px-8 border-or md:border-r text-center md:text-left space-y-1">
+          <p class="font-semibold text-lg">Vivek Kumar</p>
+          <p class="text-sm opacity-80">Backend & AI Engineer</p>
+          <a 
+            href="mailto:vivekraj0620@gmail.com" 
+            class="text-blue-600 cursor-pointer hover:underline block"
+          >
+            vivekraj0620@gmail.com
+          </a>
         </div>
 
-        <div class="py-4 px-8 border-or">
-          <p>BytesCode</p>
-          <p class="text-blue-600 cursor-pointer">bytescode0115@gmail.com</p>
+        <!-- Column 2 -->
+        <div class="py-6 px-8 border-or text-center space-y-1">
+          <p class="font-semibold text-lg">BytesCode</p>
+          <p class="text-sm opacity-80">Development & AI Solutions</p>
+          <a 
+            href="mailto:bytescode0115@gmail.com"
+            class="text-blue-600 cursor-pointer hover:underline block"
+          >
+            bytescode0115@gmail.com
+          </a>
         </div>
 
-        <div class="py-4 px-8">
-          <p class=" text-blue-500">© 2025 Vivek Kumar. All rights reserved.</p>
+        <!-- Column 3 -->
+        <div class="py-6 px-8 text-center md:text-right space-y-1">
+          <p class="text-blue-500 text-sm">
+            © 2025 Vivek Kumar  
+          </p>
+          <p class="opacity-80 text-sm">
+            All rights reserved.
+          </p>
         </div>
 
       </div>

@@ -46,7 +46,7 @@ const experiences = [
         <p class="text-3xl font-medium">Roles and Responsibilities That Shaped My Skills</p>
       </div>
 
-      <div id="exp-card" class="grid grid-cols-2">
+      <div id="exp-card" class="grid grid-cols-1 md:grid-cols-2">
 
         <div
           v-for="(exp, index) in experiences"
