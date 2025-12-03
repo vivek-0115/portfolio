@@ -147,13 +147,13 @@ onBeforeUnmount(() => {
                                 <div class="numbering">
                                     <span class="num-text">{{ index + 1 }}</span>
                                 </div>
-                                <div class="cat-name flex w-full gap-4 items-center">
-                                    <Icon :icon="category.icon" class="w-10 h-10" />
-                                    <p class="text-2xl">{{ category.name }}</p>
+                                <div class="cat-name flex w-full gap-2 items-center">
+                                    <Icon :icon="category.icon" class="w-8 md:w-10 h-8 md:h-10" />
+                                    <p class="text-xl">{{ category.name }}</p>
                                 </div>
                             </div>
 
-                            <div class="skill grid grid-cols-2 gap-y-12 gap-x-10 md:flex md:gap-8 px-3 py-2">
+                            <div class="skill grid grid-cols-2 gap-y-8 gap-x-4 md:flex md:gap-8 px-1 py-2">
                                 <div v-for="skill in category.skills" :key="skill.name" id="skill-card"
                                     class="relative flex flex-col gap-2 px-4 py-2 reveal-section ">
                                     <span></span><span></span><span></span><span></span>
@@ -211,7 +211,7 @@ onBeforeUnmount(() => {
     content: "";
     position: absolute;
     left: -1px;
-    top: -5px;
+    top: -1px;
     width: 1px;
     height: 10px;
     background-color: var(--btn-edge);
@@ -225,7 +225,7 @@ onBeforeUnmount(() => {
     content: "";
     position: absolute;
     top: -1px;
-    left: -5px;
+    left: -1px;
     width: 10px;
     height: 1px;
     background-color: var(--btn-edge);
@@ -243,7 +243,7 @@ onBeforeUnmount(() => {
 #skill-card span:nth-child(2)::before{
     content: "";
     position: absolute;
-    right: -5px;
+    right: -1px;
     top: -1px;
     width: 10px;
     height: 1px;
@@ -256,7 +256,7 @@ onBeforeUnmount(() => {
 #skill-card span:nth-child(2)::after{
     content: "";
     position: absolute;
-    top: -5px;
+    top: -1px;
     right: -1px;
     width: 1px;
     height: 10px;
@@ -274,7 +274,7 @@ onBeforeUnmount(() => {
 #skill-card span:nth-child(3)::before{
     content: "";
     position: absolute;
-    left: -5px;
+    left: -1px;
     bottom: -1px;
     width: 10px;
     height: 1px;
@@ -287,7 +287,7 @@ onBeforeUnmount(() => {
 #skill-card span:nth-child(3)::after{
     content: "";
     position: absolute;
-    bottom: -5px;
+    bottom: -1px;
     left: -1px;
     width: 1px;
     height: 10px;
@@ -306,7 +306,7 @@ onBeforeUnmount(() => {
     content: "";
     position: absolute;
     right: -1px;
-    bottom: -5px;
+    bottom: -1px;
     width: 1px;
     height: 10px;
     background-color: var(--btn-edge);
@@ -320,7 +320,7 @@ onBeforeUnmount(() => {
     content: "";
     position: absolute;
     bottom: -1px;
-    right: -5px;
+    right: -1px;
     width: 10px;
     height: 1px;
     background-color: var(--btn-edge);

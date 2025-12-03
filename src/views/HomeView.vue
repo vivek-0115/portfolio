@@ -80,7 +80,7 @@ onBeforeUnmount(() => {
           <img
             src="../assets/vivek.png"
             alt="Vivek portrait"
-            class="w-70 md:w-[800px] object-contain"
+            class="w-45 md:w-[800px] object-contain"
           />
         </div>
 

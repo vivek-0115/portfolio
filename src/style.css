@@ -139,16 +139,15 @@ body{
   transition: all 0.5s ease-in-out;
 }
 #article:nth-child(odd) .cat-name {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 #article:nth-child(odd) .skill {
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   justify-content: start;
 }
 
 #article:nth-child(even) {
   position: relative;
-  /* @apply border-r border-b border-blue-500 dark:border-blue-500 */
 }
 #article:nth-child(even)::before{
     width: 1px;
@@ -184,11 +183,11 @@ body{
   transform: translateY(-50%) translateX(50%) rotate(45deg);
 }
 #article:nth-child(even) .cat-name {
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   justify-content: end;
 }
 #article:nth-child(even) .skill {
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   justify-content: end;
 }
 
