@@ -124,10 +124,10 @@ onBeforeUnmount(() => {
              mobile: order-3 and has a gap above (mt) to separate from name/socials
              md+: becomes right column (order-3), normal spacing
         -->
-        <div class="load-box-right order-3 md:order-3 mt-6 md:mt-0 px-2">
+        <div class="load-box-right order-3 md:order-3 mt-6 md:mt-0 px-1">
           <p class="text-blue-600 tracking-[2px] -mb-1">-Introduction</p>
 
-          <p class="text-3xl font-medium leading-snug mt-2">
+          <p class="text-2xl md:text-3xl font-medium leading-snug mt-2">
             Backend Developer with <br />
             <span id="typing-text" class="typing text-blue-700 dark:text-blue-400"></span> Expertise.
           </p>

@@ -52,9 +52,9 @@ onMounted(() => {
 
     <!-- NAVBAR (glassy/backdrop kept as before) -->
     <section class="border-tb sticky top-0 z-50 backdrop-blur-md">
-      <nav class="container mx-auto border-lr px-8 py-4 flex items-center justify-between relative">
+      <nav class="container mx-auto border-lr p-2 md:px-8 md:py-4 flex items-center justify-between relative">
         <!-- Brand (kept exactly) -->
-        <div class="text-4xl font-bold bonheur-royale-regular" style="color: var(--primary-blue);">
+        <div class=" text-3xl md:text-4xl font-bold bonheur-royale-regular text-blue-600 dark:text-blue-500">
           Bytes Code
         </div>
 
@@ -72,7 +72,7 @@ onMounted(() => {
              On mobile: show theme toggle, contact, menu button (in that order)
              On md+: show theme dropdown and contact (menu hidden)
         -->
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-0.5">
           <!-- Theme toggle (kept, always visible) -->
           <div class="relative group">
             <button class="p-2 border-all border-hover" @click="toggleTheme(theme === 'light' ? 'dark' : 'light')" aria-label="Toggle theme">
@@ -80,11 +80,11 @@ onMounted(() => {
             </button>
 
             <!-- Desktop dropdown (kept, visible on hover - same behavior) -->
-            <div class="absolute right-0 shadow-md backdrop-blur-lg invisible group-hover:visible transition-all duration-200 mt-2 rounded">
+            <div class="absolute right-0 shadow-md backdrop-blur-lg invisible group-hover:visible transition-all duration-200 mt-1">
               <button class="p-2 border-all border-hover" @click="toggleTheme('light')">
                 <SunIcon class="w-6 h-6" />
               </button>
-              <button class="p-2 border-all border-hover" @click="toggleTheme('dark')">
+              <button class="p-2 border-all border-hover mt-1" @click="toggleTheme('dark')">
                 <MoonIcon class="w-6 h-6" />
               </button>
             </div>
@@ -96,7 +96,7 @@ onMounted(() => {
           <!-- Mobile menu button (moved to right) -->
           <button
             @click="isOpen = true"
-            class="md:hidden p-2 border-all border-hover rounded"
+            class="md:hidden p-2 border-all border-hover"
             aria-label="Open menu"
             aria-controls="mobile-drawer"
             aria-expanded="false"
@@ -122,7 +122,7 @@ onMounted(() => {
           <!-- header + close -->
           <div class="flex items-center justify-between">
             <h3 class="text-lg font-semibold">Menu</h3>
-            <button class="p-2 border-all border-hover rounded" @click="isOpen = false" aria-label="Close menu">
+            <button class="p-2 border-all border-hover" @click="isOpen = false" aria-label="Close menu">
               <XMarkIcon class="w-6 h-6" />
             </button>
           </div>

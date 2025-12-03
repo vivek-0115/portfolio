@@ -1,12 +1,12 @@
 <template>
-  <section class="mt-8">
+  <section class="mb-4 border-ob">
     <div class="container mx-auto border-lr">
 
       <!-- wrapper -->
       <div class="grid grid-cols-1 md:grid-cols-3">
 
         <!-- Column 1 -->
-        <div class="py-6 px-8 border-or md:border-r text-center md:text-left space-y-1">
+        <div class="py-6 px-8 md:border-r text-center md:text-left space-y-1 border-gray-300 dark:border-gray-500">
           <p class="font-semibold text-lg">Vivek Kumar</p>
           <p class="text-sm opacity-80">Backend & AI Engineer</p>
           <a 
@@ -18,7 +18,7 @@
         </div>
 
         <!-- Column 2 -->
-        <div class="py-6 px-8 border-or text-center space-y-1">
+        <div class="py-6 px-8 md:border-r text-center space-y-1 border-gray-300 dark:border-gray-500">
           <p class="font-semibold text-lg">BytesCode</p>
           <p class="text-sm opacity-80">Development & AI Solutions</p>
           <a 

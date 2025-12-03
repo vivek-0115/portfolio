@@ -115,12 +115,12 @@ onBeforeUnmount(() => {
   <section id="about" class="border-ob">
     <div class="container mx-auto border-lr flex flex-col">
 
-      <div class="border-ob py-12 px-8">
+      <div class="border-ob py-10 md:py-12 px-6 md:px-8">
         <p class="py-4" style="color: var(--primary-blue);">About Me</p>
         <p class="text-3xl font-medium">Where I Started and Where I’m Heading</p>
       </div>
 
-      <div class="px-8 py-4">
+      <div class="px-6 md:px-8 py-3 md:py-4">
         <main class="w-full flex flex-col gap-4 border-l border-blue-500 dark:border-blue-500">
 
           <div v-for="(section, index) in aboutSections" :key="index" class="reveal-section">

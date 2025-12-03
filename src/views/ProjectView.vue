@@ -41,7 +41,7 @@ const projects = [
     <div class="container mx-auto border-lr flex flex-col">
 
       <!-- Section header -->
-      <div class="border-ob py-12 px-8">
+      <div class="border-ob py-10 md:py-12 px-6 md:px-8">
         <p class="py-4" style="color: var(--primary-blue);">Projects</p>
         <p class="text-3xl font-medium">
           A Collection of the Work I've Built and Shipped
@@ -49,7 +49,7 @@ const projects = [
       </div>
 
       <!-- Projects list -->
-      <div class="px-8 py-4">
+      <div class="px-6 md:px-8 py-3 md:py-4">
         <div id="card-holder" class="flex flex-col md:flex-row w-full gap-8">
 
           <div v-for="project in projects" :key="project.title" class="">

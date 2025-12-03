@@ -12,7 +12,7 @@ const handleSubmit = (e) => {
   <section class="border-ob">
     <div class="container mx-auto border-lr flex flex-col">
 
-      <div class="border-ob py-12 px-8">
+      <div class="border-ob py-10 md:py-12 px-6 md:px-8">
 
         <p class=" py-4" style="color: var(--primary-blue);">Contacts</p>
         <p class="text-3xl font-medium">Get In Touch With Me for Collaboration or Queries</p>
@@ -21,7 +21,7 @@ const handleSubmit = (e) => {
 
       <div class="">
         <main class="grid grid-cols-1 md:grid-cols-2">
-          <div class="px-8 py-4 border-ob md:border-or">
+          <div class="px-6 md:px-8 py-3 md:py-4 border-b md:border-r md:border-b-0 border-gray-300 dark:border-gray-500">
             <div class="space-y-6">
               <p class="text-gray-700 dark:text-gray-400 text-lg leading-relaxed ">
                 We are committed to processing the information in order to contact you and talk
@@ -96,36 +96,36 @@ const handleSubmit = (e) => {
             </div>
           </div>
 
-          <div class="px-8 py-4">
+          <div class="px-6 md:px-8 py-3 md:py-4">
             <form class="space-y-5" @submit="handleSubmit">
               <div class="space-y-1">
                 <label class="block text-sm font-medium">
                   Name<span class="text-red-500">*</span>
                 </label>
-                <input type="text" class="w-full border-all px-4 py-3 focus:outline-none" required />
+                <input type="text" class="w-full border-all px-4 py-2 focus:outline-none" required />
               </div>
 
               <div class="space-y-1">
                 <label class="block text-sm font-medium ">
                   Email<span class="text-red-500">*</span>
                 </label>
-                <input type="email" class="w-full border-all px-4 py-3 focus:outline-none" required />
+                <input type="email" class="w-full border-all px-4 py-2 focus:outline-none" required />
               </div>
 
               <div class="space-y-1">
                 <label class="block text-sm font-medium">
                   Website<span class="text-red-500">*</span>
                 </label>
-                <input type="url" class="w-full border-all px-4 py-3 focus:outline-none" required />
+                <input type="url" class="w-full border-all px-4 py-2 focus:outline-none" required />
               </div>
 
               <div class="space-y-1">
                 <label class="block text-sm font-medium">Message</label>
                 <textarea rows="4"
-                  class="w-full resize-none border-all px-4 py-3 text-ray-900 focus:outline-none "></textarea>
+                  class="w-full resize-none border-all px-4 py-1 text-ray-900 focus:outline-none "></textarea>
               </div>
 
-              <button type="submit" class="w-full py-3.5 text-center text-lg font-medium dark:bg-blue-600 bg-blue-500">
+              <button type="submit" class="w-full py-3 text-center text-lg font-medium dark:bg-blue-600 bg-blue-500">
                 Submit
               </button>
             </form>
